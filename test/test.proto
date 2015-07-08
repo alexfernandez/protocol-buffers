@@ -27,7 +27,8 @@ message Integers {
   optional sint64 sint64 = 2;
   optional int32 int32 = 3;
   optional uint32 uint32 = 4;
-  optional int64 int64 = 5;
+  optional int64 int641 = 5;
+  optional int64 int642 = 6;
 }
 
 message Float {

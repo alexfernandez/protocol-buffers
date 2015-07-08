@@ -57,13 +57,15 @@ var defaultValue = function(f, def) {
     case 'fixed32':
     case 'varint':
     case 'enum':
-    case 'uint64':
     case 'uint32':
-    case 'int64':
     case 'int32':
-    case 'sint64':
     case 'sint32':
     return ''+parseInt(def || 0)
+
+    case 'uint64':
+    case 'int64':
+    case 'sint64':
+	return def;
 
     default:
     return 'null'
