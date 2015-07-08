@@ -10,8 +10,8 @@ tape('integers encode + decode', function(t) {
     sint64: 2,
     int32: 3,
     uint32: 4,
-	int641: '05',
-	int642: '80b8aad7ecf0d89a7c',
+	int641: '5',
+	int642: '8950169265049869475',
   })
 
   var o1 = Integers.decode(b1)
@@ -22,8 +22,8 @@ tape('integers encode + decode', function(t) {
     sint64: 2,
     int32: 3,
     uint32: 4,
-	int641: '05',
-	int642: '80b8aad7ecf0d89a7c',
+	int641: '5',
+	int642: '8950169265049869475',
   })
 
   t.end()
@@ -35,8 +35,8 @@ tape('integers encode + decode + negative', function(t) {
     sint64: -2,
     int32: -3,
     uint32: 0,
-    int641: '85ffffffffffffffff01',
-    int642: '80b8aad7ecf0d89afc01',
+    int641: '-5',
+    int642: '-8950169265049869475',
   })
 
   var o1 = Integers.decode(b1)
@@ -46,8 +46,8 @@ tape('integers encode + decode + negative', function(t) {
     sint64: -2,
     int32: -3,
     uint32: 0,
-    int641: '85ffffffffffffffff01',
-    int642: '80b8aad7ecf0d89afc01',
+    int641: '-5',
+    int642: '-8950169265049869475',
   })
 
   t.end()
